@@ -5,11 +5,11 @@ import { ActivatedRoute, Router } from "@angular/router";
 import * as Constants from "../collections/Constants";
 
 @Component({
-  selector: "join-root",
-  templateUrl: "./join.component.html",
-  styleUrls: ["./join.component.css"]
+  selector: "difficultyOpt-root",
+  templateUrl: "./difficultyOpt.component.html",
+  styleUrls: ["./difficultyOpt.component.css"]
 })
-export class JoinComponent implements OnInit {
+export class DifficultyComponent implements OnInit {
   images_mapping = [];
 
   constructor(
@@ -21,9 +21,5 @@ export class JoinComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       console.log("lang = " + params["lang"]);
     });
-  }
-
-  public next(): void {
-    this.router.navigate(["/difficulty"]);
   }
 }

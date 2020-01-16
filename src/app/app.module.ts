@@ -5,6 +5,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { StartComponent } from "./start/start.component";
 import { JoinComponent } from "./join/join.component";
+import { DifficultyComponent } from "./difficultyOpt/difficultyOpt.component";
 import { AppRouting } from "./app.routing";
 
 import { MatGridListModule } from "@angular/material/grid-list";
@@ -21,7 +22,12 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { from } from "rxjs";
 
 @NgModule({
-  declarations: [AppComponent, StartComponent, JoinComponent],
+  declarations: [
+    AppComponent,
+    StartComponent,
+    JoinComponent,
+    DifficultyComponent
+  ],
   imports: [
     AppRouting,
     BrowserAnimationsModule,
